@@ -18,7 +18,7 @@ public class Revision {
     @Column(name = "REV_DESC")
     private  String description;
 
-    @Column(name = "TIMESTAMP")
+    @Column(name = "TIMESTAMP_PI")
     private String updatedAt;
 
     @Column(name = "PLAN_START_DATE")

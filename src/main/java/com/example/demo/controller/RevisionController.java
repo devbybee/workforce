@@ -85,6 +85,7 @@ public class RevisionController {
     @GetMapping("/sendWfmRevision")
     public ResponseEntity<?> getDataRevision() {
         helper = new Helper();
+        System.out.println(helper.getLocalTimeStart() + " :: " + helper.getLocalTimeEnd());
         List<Revision> revisions = revisionRepository.getLatestRevision(helper.getLocalTimeStart(), helper.getLocalTimeEnd());
 
         restResponse = new RestResponse();
